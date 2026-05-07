@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kiểm Thử - Kỹ sư IT</title>
+    <style>
+    
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f2eb; 
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+     
+        .portfolio-section {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+     
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #5a3d2b; 
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+     
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+    
+        .project-card {
+            background-color: #ffffff;
+            border: 1px solid #e8dcc8;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+       
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(139, 90, 43, 0.15);
+        }
+
+        .card-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            color: #5a3d2b;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .card-desc {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 25px;
+            min-height: 70px; 
+        }
+
+        
+        .btn-link {
+            display: inline-block;
+            background-color: #8b5a2b; 
+            color: #ffffff !important;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+    
+        .btn-link:hover {
+            background-color: #6b4522; 
+        }
+
+        
+        @media (max-width: 768px) {
+            .section-title { font-size: 24px; }
+            .project-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="portfolio-section">
+        <h2 class="section-title">Dự án & Kịch bản Kiểm thử</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div class="card-icon">⚙️</div>
+                <h3 class="card-title">Kiểm thử API - Quản lý Cửa hàng</h3>
+                <p class="card-desc">Thiết kế kịch bản và thực thi kiểm thử API cho hệ thống quản lý bán hàng tạp hóa đảm bảo luồng dữ liệu chính xác.</p>
+                <a href="https://github.com/duyen24032004/MyCV/blob/main/API%20-%20C%E1%BB%ADa%20h%C3%A0ng%20t%E1%BA%A1p%20h%C3%B3a%20%C4%91%C6%A1n%20gi%E1%BA%A3n.xlsx" target="_blank" class="btn-link">Xem File Excel</a>
+            </div>
+
+            <div class="project-card">
+                <div class="card-icon">📚</div>
+                <h3 class="card-title">Hệ thống E-learning</h3>
+                <p class="card-desc">Xây dựng test case chi tiết cho các chức năng cốt lõi: quản lý người dùng, khóa học và tin tức trên nền tảng web.</p>
+                <a href="https://github.com/duyen24032004/MyCV/blob/main/E-learning.xlsx" target="_blank" class="btn-link">Xem File Excel</a>
+            </div>
+
+            <div class="project-card">
+                <div class="card-icon">🛒</div>
+                <h3 class="card-title">E-commerce - TutorialsNinja</h3>
+                <p class="card-desc">Thực hiện kiểm thử hệ thống website thương mại điện tử, bao quát các luồng mua hàng, giỏ hàng và thanh toán.</p>
+                <a href="https://github.com/duyen24032004/MyCV/blob/main/TestCase%20-%20TutorialsNinja%20Web%20Application.xlsx" target="_blank" class="btn-link">Xem File Excel</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

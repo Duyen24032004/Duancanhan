@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f2eb; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+.portfolio-section {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #5a3d2b; 
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e8dcc8;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+}
+
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(139, 90, 43, 0.15); 
+}
+
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+.card-title {
+    font-size: 20px;
+    color: #5a3d2b;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+
+.card-desc {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+    min-height: 70px; 
+}
+
+
+.btn-link {
+    display: inline-block;
+    background-color: #8b5a2b; /* Nền nút màu nâu */
+    color: #ffffff !important; /* Chữ màu trắng */
+    padding: 12px 24px;
+    text-decoration: none; /* Bỏ gạch chân của thẻ a mặc định */
+    border-radius: 6px; /* Bo góc nút bấm */
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-link:hover {
+    background-color: #6b4522; 
+}
+
+
+@media (max-width: 768px) {
+    .section-title { 
+        font-size: 24px; 
+    }
+    .project-card { 
+        padding: 20px; 
+    }
+}
